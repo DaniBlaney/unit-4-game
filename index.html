@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crystal game</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Crystals Collector</h1>
+  </header>
+
+  <div id = "Directions">
+    <ul>
+      <p>You will be given a random number at the start of the game.</p>
+      <p>There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score. </p>
+      <p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
+      <p>The value of each crystal is hidden from you until you click on it.</p>
+      <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </ul>
+  </div>
+  <div class = "Scoreboard">
+    <h2 id = "Guess">
+      Guess the number:
+      <span id = "numberToGet">  </span>
+    </h2>
+    <h2 id = "playersScore">
+      Player Score:
+      <span id = "playerScore">  </span>
+    </h2>
+  </div>
+  <div class = "winsLoss">
+    <h2>
+      Wins:
+      <span id = "numberWins">  </span>
+    </h2>
+    <h2>
+      Losses:
+      <span id = "numberLosses">  </span>
+    </h2>
+  </div>
+  <div id="crystals">
+      <img class="crystals"  id="crystalOne" src="assets/images/diamond.gif" width = "125px" height = "125px">
+      <img class="crystals"  id="crystalTwo" src="assets/images/redcrystal.jpg" width = "125px" height = "125px">
+      <img class="crystals"  id="crystalThree" src="assets/images/bluecrystal.jpg" width = "125px" height = "125px">
+      <img class="crystals"  id="crystalFour" src="assets/images/yellowcrystal.jpg" width = "125px" height = "125px">
+
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
