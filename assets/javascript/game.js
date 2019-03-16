@@ -65,37 +65,19 @@ $("#crystalTwo").on("click", function() {
     playerScore = playerScore + crystalTwo;
     console.log("New userTotal" + " " +playerScore);
     $("#playerScore").text(playerScore);
-
-    if (playerScore === numberToGet) {
-        winner()
-    }
-    else if (playerScore > numberToGet) {
-        loser()
-    }
+    checkWinner();
 });
 
 $("#crystalThree").on("click", function() {
     playerScore = playerScore + crystalThree;
     console.log("New userTotal" + " " + playerScore);
     $("#playerScore").text(playerScore);
-    if (playerScore === numberToGet) {
-        winner()
-        }
-
-    else if (playerScore > numberToGet) {
-        loser()
-    }
+    checkWinner();
 });
 
 $("#crystalFour").on("click", function() {
     playerScore = playerScore + crystalFour;
     console.log("New userTotal" + " " + playerScore);
     $("#playerScore").text(playerScore);
-    if (playerScore === numberToGet) {
-        winner()
-    }
-
-    else if (playerScore > numberToGet) {
-        loser()
-    }
+    checkWinner();
 });
