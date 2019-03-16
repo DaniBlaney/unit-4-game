@@ -17,41 +17,40 @@ $("#numberWins").text(wins);
 $("#numberLosses").text(losses);
 
 function reset(){
-playerScore = 0;
-$("#numberToGet").text(numberToGet);
-numberToGet = Math.floor((Math.random()*(120-19+1))+19);
-$("#playerScore").text(playerScore);
-crystalOne = Math.floor(Math.random() * 12 +1);
-crystalTwo = Math.floor(Math.random() * 12 +1);
-crystalThree = Math.floor(Math.random() * 12 +1);
-crystalFour = Math.floor(Math.random() * 12 +1);
-
+    playerScore = 0;
+    numberToGet = Math.floor((Math.random()*(120-19+1))+19);
+    $("#numberToGet").text(numberToGet);
+    $("#playerScore").text(playerScore);
+    crystalOne = Math.floor(Math.random() * 12 +1);
+    crystalTwo = Math.floor(Math.random() * 12 +1);
+    crystalThree = Math.floor(Math.random() * 12 +1);
+    crystalFour = Math.floor(Math.random() * 12 +1);
 
 }
 
 function winner() {
-alert("You Won!");
-wins++;
-$("#numberWins").text(wins);
-console.log(won)
-reset();
+    alert("You Won!");
+    wins++;
+    $("#numberWins").text(wins);
+    console.log(wins)
+    reset();
 }
 
 function loser() {
-alert("You Lose!");
-losses++;
-$("#numberLosses").text(losses);
-reset();
+    alert("You Lose!");
+    losses++;
+    $("#numberLosses").text(losses);
+    reset();
 }
 
 function checkWinner() {
-if (playerScore === numberToGet) {
-winner()
-}
+    if (playerScore === numberToGet) {
+        winner()
+    }
 
-else if (playerScore > numberToGet) {
-loser()
-}
+    else if (playerScore > numberToGet) {
+        loser()
+    }
 }
 
 $("#crystalOne").on("click", function() {
